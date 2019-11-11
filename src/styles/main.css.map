@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAAA,mCAAmC;AGAnC,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,qDAAqD,CAAC,kBAAkB;EAC7E,WAAW,EAAE,GAAG;;;AAGlB,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,kDAAkD,CAAC,kBAAkB;EAC1E,WAAW,EAAE,GAAG;;;AAGlB,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,oDAAoD,CAAC,kBAAkB;EAC5E,WAAW,EAAE,GAAG;;;AAGlB,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,kDAAkD,CAAC,kBAAkB;EAC1E,WAAW,EAAE,GAAG;;;AAGlB,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,mDAAmD,CAAC,kBAAkB;EAC3E,WAAW,EAAE,IAAI;;;AHnBnB,6BAA6B;AAG7B,AAAA,CAAC;AACD,IAAI,CAAC;EACD,WAAW,EAAE,QAAQ;EACrB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,GAAG;CAEnB;;AAGD,AAAA,CAAC,CAAC;EACE,aAAa,EAAE,IAAI;EACnB,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "main.scss",
+        "partials/config/_mixin.scss",
+        "partials/config/_colors.scss",
+        "partials/config/_fonts.scss",
+        "partials/config/_variables.scss",
+        "partials/config/_animations.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

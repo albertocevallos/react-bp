@@ -1,0 +1,46 @@
+/** partials for all common sass */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Regular.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Demi.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/avenir-next-Heavy.otf") format("opentype");
+  font-weight: 1000;
+}
+
+/** partials for components*/
+*,
+body {
+  font-family: "Avenir";
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

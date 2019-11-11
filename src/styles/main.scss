@@ -1,0 +1,25 @@
+/** partials for all common sass */
+
+@import "./partials/config/mixin";
+@import "./partials/config/colors";
+@import "./partials/config/fonts";
+@import "./partials/config/variables";
+@import "./partials/config/animations";
+
+/** partials for components*/
+
+
+*,
+body {
+    font-family: "Avenir";
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+
+}
+
+
+a {
+    text-emphasis: none;
+    text-decoration: none;
+}
