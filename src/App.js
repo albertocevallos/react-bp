@@ -12,7 +12,11 @@ class App extends Component {
   componentDidMount() {}
 
   render() {
-    return <Switch></Switch>;
+    return (
+      <Switch>
+        <div>here</div>
+      </Switch>
+    );
   }
 }
 
