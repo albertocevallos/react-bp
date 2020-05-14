@@ -1,4 +1,4 @@
-# React, Redux, Redux Thunk, SCSS, CSS Modules
+# React, Redux, Redux Thunk, SCSS
 Bundled with Parcel
 
 ## Minimal Boilerplate
