@@ -1,12 +1,14 @@
-# React Boilerplate v1
+# React, Redux, Redux Thunk, SCSS, CSS Modules
+Bundled with Parcel
 
-My own react boilerplate. Feel free to make your own version & use it as a reference! 🎉
+## Minimal Boilerplate
+* goal: write less code, build more routes & components
+* opinionated file structure
+* simple CSS resets
 
-## Installation
+## Redux?
+* only import state into components
+* dispatch + hooks vs. actions
+* generic redux utils found in `/util/redux-util.js`
+* a slight "re-think" of redux and streamlining of files
 
-1. `npm i`
-2. `npm start`
-
-## Extensions
-
-Also using the following in VS Code: Live Sass Compiler, Babel JavaScript, JS JSX Snippets.
