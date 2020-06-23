@@ -1,54 +1,27 @@
-import React, { Suspense, lazy } from "react";
-import { connect } from "react-redux";
-import { Router, navigate } from "@reach/router";
-import { appState } from "./redux/app";
-import { userState } from "./redux/user";
-//components
-import Dialog from "./components/Dialog/Dialog";
-//image and style
-import LoadingGif from "./img/loading-bubble.gif";
-import { overlay } from "./theme/Theme.module.scss";
+import React, { lazy, Suspense } from "react";
+import { Route, Switch, Redirect } from "react-router";
+
 //routes
-const Home = lazy(() => import("./routes/Home/Home"));
-const About = lazy(() => import("./routes/About/About"));
-const Login = lazy(() => import("./routes/Login/Login"));
-//loading component
-const Loading = () => (
-  <div className={overlay}>
-    <img src={LoadingGif} />
-  </div>
-);
-//bring in both states here
-//can also use connect in route components when data is specific to those routes
-export default connect((state) => ({
-  appState: appState(state),
-  userState: userState(state),
-}))(function App(props) {
-  const {
-    appState: { dialog, loading },
-    userState: { isLoggedIn },
-  } = props;
+const Home = lazy(() => import("./routes/Home"));
+// import Home from "./routes/Home";
 
-  if (window.location.pathname.indexOf("login") === -1 && !isLoggedIn) {
-    navigate("/login");
-  }
+//components
 
+//styles
+import "./styles/main.css";
+
+export default function App() {
   return (
-    <div>
-      {loading && <Loading />}
-      {dialog && (
-        <div className={overlay}>
-          <Dialog {...dialog} />
-        </div>
-      )}
-
-      <Suspense fallback={<Loading />}>
-        <Router>
-          <Home {...props} path="/" />
-          <About {...props} path="/about" />
-          <Login {...props} path="/login" />
-        </Router>
-      </Suspense>
-    </div>
+    <Suspense fallback={<div>Loading</div>}>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route
+          path="*"
+          render={() => {
+            return <Redirect to="/" />;
+          }}
+        />
+      </Switch>
+    </Suspense>
   );
-});
+}
